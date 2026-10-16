@@ -1,6 +1,6 @@
 # SpecStream for Obsidian
 
-Ask for a list in plain words and get it in your note as a table. Every row links to the page it came from, so you can click through before you trust it.
+Pull live web data into your note as a table. Describe what you need in plain words; every row links to the page it came from, so you can click through before you trust it.
 
 "Food banks in Texas, with their annual revenue." "Every roofer in Columbus rated 4.5 or better, with a phone number." "Companies that filed to raise $5M or more this week." You type it, you see the price, you click once, and the rows land where your cursor is. No forty tabs, no copy and paste, no "here are the first ten."
 
