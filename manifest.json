@@ -1,7 +1,7 @@
 {
 	"id": "specstream",
 	"name": "SpecStream",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "1.14.4",
 	"description": "Pull live web data into your notes. Describe what you need, see the price first, and insert each record with the page it came from.",
 	"author": "SpecStream",

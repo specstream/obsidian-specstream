@@ -75,7 +75,7 @@ export class FindListModal extends Modal {
 		const { contentEl } = this;
 		contentEl.createEl("p", {
 			cls: "specstream-lede",
-			text: "Say what you want in plain words. The live web gets read, every match comes back with the page it came from, and you see the price before anything runs.",
+			text: "Say what you want in plain words. You see the price before anything runs. Source URL and read time on every value.",
 		});
 
 		new Setting(contentEl)
@@ -99,7 +99,7 @@ export class FindListModal extends Modal {
 
 		new Setting(contentEl)
 			.setName("How many rows?")
-			.setDesc(`From 1 to ${MAX_ROWS}. You pay per match, so this sets the most you could pay, not what you will.`)
+			.setDesc(`From 1 to ${MAX_ROWS}. You pay for each result delivered, so this sets the most you could pay, not what you will.`)
 			.addText((text) => {
 				text.inputEl.type = "number";
 				text.inputEl.min = "1";
@@ -178,7 +178,7 @@ export class FindListModal extends Modal {
 		const rateText = typeof rate === "number" ? ` Matches start at ${money(rate, quote.currency)} each.` : "";
 		contentEl.createEl("p", {
 			cls: "specstream-muted",
-			text: `You pay only for rows that match, and never more than this maximum. A search that finds nothing costs nothing.${rateText}`,
+			text: `You pay for each row delivered, and never more than this maximum. A search that finds nothing costs nothing.${rateText}`,
 		});
 
 		if (overLimit) {
