@@ -3,7 +3,7 @@
 	"name": "SpecStream",
 	"version": "1.0.2",
 	"minAppVersion": "1.14.4",
-	"description": "Pull live web data into your notes. Describe what you need, see the price first, and insert each record with the page it came from.",
+	"description": "Pull live web data into your notes as Markdown tables. Describe what you need in plain words and approve the price before it runs. Source URL and read time on every value.",
 	"author": "SpecStream",
 	"authorUrl": "https://specstream.ai",
 	"isDesktopOnly": false
