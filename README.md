@@ -1,10 +1,11 @@
 # SpecStream for Obsidian
 
-Pull live web data into your note as a table. Describe what you need in plain words; every row links to the page it came from, so you can click through before you trust it.
+[SpecStream](https://specstream.ai) is the live web data engine. One platform to build, search, extract, enrich, map, and monitor data across the entire web.
 
-"Food banks in Texas, with their annual revenue." "Every roofer in Columbus rated 4.5 or better, with a phone number." "Companies that filed to raise $5M or more this week." You type it, you see the price, you click once, and the rows land where your cursor is. No forty tabs, no copy and paste, no "here are the first ten."
+Ask for any dataset in plain words, and SpecStream builds it from the entire live web: every match found, extracted and enriched into structured records, then monitored for change. This plugin puts the rows in your note as a Markdown table, where your cursor is.
 
-[SpecStream](https://specstream.ai) is the live web data engine for teams and agents. It reads the live web, brings back every match, and you pay only for the matches. This plugin is the Obsidian door into it.
+- Source URL and read time on every value.
+- You see the price first and approve it with one click. You pay for each row delivered.
 
 ## What lands in your note
 
@@ -12,9 +13,9 @@ A Markdown table with one column per fact you asked for, plus a Source column th
 
 | Name | Website | Annual revenue | Source |
 | --- | --- | --- | --- |
-| *the match* | *its own site* | *the figure it published* | *[the page it came from]* |
+| *the match* | *its own site* | *the figure it published* | *[its source URL]* |
 
-Under the table, if you leave it on, goes one line with your request, the row count, the date, and a link to the list in your SpecStream workspace. The workspace is where a list stays current, goes to Sheets or a CRM, and lands in your inbox when something new shows up.
+Under the table, if you leave it on, goes one line with your request, the row count, the date, and a link to the list in your SpecStream workspace. The workspace is where a list stays up to date, goes to Sheets or a CRM, and lands in your inbox when something new shows up.
 
 ## Commands
 
@@ -44,11 +45,11 @@ The key is kept in Obsidian's secret storage, not in your vault and not in the p
 Nothing is bought without your click.
 
 1. You write the request. The plugin asks SpecStream to read it and price it. Nothing runs, nothing is charged.
-2. You see the maximum price for the row count you chose. It is a ceiling: you pay only for rows that match, and a search that finds nothing costs nothing.
+2. You see the maximum price for the row count you chose. It is a ceiling: you pay for each row delivered, and a search that finds nothing costs nothing.
 3. If the maximum is above your spending limit, the approve button stays off. Ask for fewer rows or raise the limit in settings.
 4. You click **Approve**. That approves exactly that quote at exactly that maximum, and the plugin starts the list.
 
-Matches cost 10¢, 30¢ or $1 each depending on how many facts you ask for. A person's email adds 10¢ and a phone number adds 25¢ on top of the row's rate. SpecStream shows the maximum before anything runs, so there is no bill to discover afterward. Current rates are on the [pricing page](https://specstream.ai/pricing).
+Matches cost 5¢, 15¢ or $1 each depending on how many facts you ask for. A person's email adds 5¢ and a phone number adds 15¢ on top of the row's rate. SpecStream shows the maximum before anything runs, so there is no bill to discover afterward. Current rates are on the [pricing page](https://specstream.ai/pricing).
 
 ## Settings
 
@@ -59,7 +60,7 @@ Matches cost 10¢, 30¢ or $1 each depending on how many facts you ask for. A pe
 | Spending limit per request | $5 | The most one list may cost. A higher price can't be approved from the plugin |
 | Add a note under each table | on | The line with your request, row count, date, and a link to the list |
 
-If your request names its own count ("50 roofers in Columbus..."), that count wins over the default.
+If your request names its own count ("50 open datasets on..."), that count wins over the default.
 
 ## Network use, accounts and privacy
 
@@ -75,7 +76,7 @@ This plugin needs the internet and a SpecStream account. Here is exactly what it
 ## Troubleshooting
 
 - **"SpecStream did not accept the API key."** The key was revoked, expired or pasted with a space. Create a new one and choose it again in settings.
-- **"SpecStream needs a clearer request."** Add the place, or what every row must meet. "Dentists" is a category. "Dentists in Lisbon that take new patients" is a list.
+- **"SpecStream needs a clearer request."** Add the place, or what every row must meet. "Datasets" is a category. "Open datasets on urban tree canopy published since 2020" is a request.
 - **The list is still running when the window says it is taking longer than usual.** Close the window. The list keeps running, and **Insert a saved list** will find it when it's done.
 - **No lists in the picker.** The picker shows lists SpecStream found for you. Lists you imported or combined stay in the workspace.
 
